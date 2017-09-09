@@ -12,7 +12,7 @@
   </thead>
 
   <tbody>
-    <% @users.each do |user| %>
+    <% @users.each do |user| %>rails generate scaffold Micropost content:text user_id:integer
       <tr>
         <td><%= user.name %></td>
         <td><%= user.email %></td>
