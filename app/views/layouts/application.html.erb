@@ -11,14 +11,15 @@
   <body>
     <%= render 'layouts/header' %>
     <div class="container">
-          
+    
+    <!-- Inicio bloque devise muestra que el inicio de sesión fue exitoso o no-->
       <% if notice %>
     	  <p class="alert alert-success"><%= notice %></p>
     	<% end %>
     	<% if alert %>
     	  <p class="alert alert-danger"><%= alert %></p>
     	 <% end %>
-          
+    <!-- Fin bloque devise -->      
       
       <%= yield %>
       
